@@ -1,0 +1,10 @@
+server:
+  port: 8085
+  forward-headers-strategy: framework
+
+spring:
+  application:
+    name: backend-chat
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
