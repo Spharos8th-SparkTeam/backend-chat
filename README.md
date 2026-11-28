@@ -15,7 +15,7 @@ ReSpark(글로벌 완구 중고거래 플랫폼)의 **채팅 서비스**입니�
 - 메시지 번역
 - 채팅방 나가기 (soft delete)
 
-> 현재는 환경 설정·명세 문서 반영 단계이며, 위 기능은 순차적으로 구현한다.
+> 현재는 API 골격(stub) 단계이며, Document·CRUD는 DB 확정 후 구현한다.
 > 상세 요구사항은 `docs/feature-spec.md`를 따른다.
 
 ## 기술 스택
@@ -46,8 +46,13 @@ backend-chat
 ├── docs/
 └── src/main/java/com/spark/backend_chat/
     ├── BackendChatApplication.java
-    └── common/config/SwaggerConfig.java
+    ├── common/
+    │   ├── config/SwaggerConfig.java
+    │   └── error/
+    ├── room/          # 채팅방 API 골격
+    └── message/       # 메시지 API 골격
 ```
+
 
 ## 실행 방법
 
